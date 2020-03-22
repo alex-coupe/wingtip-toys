@@ -70,6 +70,12 @@ namespace WingtipToys.Logic
             }
             return HttpContext.Current.Session[CartSessionKey].ToString();
         }
+
+        internal void MigrateCart(string cartId, object text)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<CartItem> GetCartItems()
         {
             ShoppingCartId = GetCartId();
